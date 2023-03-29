@@ -1,6 +1,6 @@
     //  BMI = weight (kg) / (height (m) * height (m))
 
-    var weight, height, measure, bmi, error ;  
+    var weight, height, result, bmi, error ;  
     function calculateBtn()
     {
         weight = document.getElementById("weightInput").value;
@@ -13,13 +13,13 @@
 	bmi = bmi.toFixed(2);
 
 	if (bmi <= 18.4) {
-		measure = "Your BMI is " + bmi + " which means " + "you are Underweight";
+		result = "Your BMI is " + bmi + " which means " + "you are Underweight";
 	} else if (bmi >= 18.5 && bmi <= 24.9) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Normal";
+		result = "Your BMI is " + bmi + " which means " + "You are Normal";
 	} else if (bmi >= 25 && bmi <= 29.9) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Overweight";
+		result = "Your BMI is " + bmi + " which means " + "You are Overweight";
 	} else if (bmi >= 30) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Obese";
+		result = "Your BMI is " + bmi + " which means " + "You are Obese";
 	}
 	
 
@@ -30,7 +30,7 @@
 	}
 	 else {
 
-		document.getElementById("results").innerHTML = measure;
+		document.getElementById("results").innerHTML = result;
 	}
 	if (weight < 0) {
 		document.getElementById("results").innerHTML = "Negative Values not Allowed";
