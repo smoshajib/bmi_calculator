@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Caltulator</title>
+    <style>
+        input,button{
+            height: 35px;
+            border-radius: 5px;
+        }
+        .imleft{
+            margin-left:10%;
+        }
+        .mleft{
+            margin-left:20%;
+        }
+    </style>
+</head>
+<body style="margin:5% 10%;">
+
+<div style="padding:10% 0%;height:200px;width:100% ;background-image: url(bmi.jpg);background-size: cover ">
+    <div class="mleft">
+         <h1>BMI Calculator</h1>
+    </div>
+<br>
+    <div class="imleft">
+             <input type="text" id="weightInput" placeholder="Enter Weight (KG)">
+             <input type="text" id="heightInput" placeholder="Enter Height (CM)">
+             <button  onclick="calculateBtn()">Calculate</button>
+             <button  onclick="location.reload()">Reload</button>
+    </div>
+
+<br>
+
+<div class="mleft">
+    <h3>Result(m): <span id="results">NAN</span></h3>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
